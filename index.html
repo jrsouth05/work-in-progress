@@ -43,6 +43,8 @@
       padding: 10px;
       height: 100vh;
       background-color: #FFFDF7;
+      padding-top: 10px;
+      margin-top: 1em;
     }
 
     .right-side {
@@ -50,7 +52,9 @@
       float: left;
       padding: 10px;
       height: 100vh;
-       background-color: #FFFDF7;
+      background-color: #FFFDF7;
+      position: relative; 
+      margin-top: 1.5em;
     }
 
     .clear {
@@ -71,12 +75,15 @@
       font-family: 'League Gothic', sans-serif;
       font-size: 120px; 
       margin: 0;
-      line-height: 1; 
+      line-height: 1;
+      position: relative; 
+      z-index: 101; 
     }
     
     p {
       color: black;
       font-family: 'Noto Sans', sans-serif; 
+      margin-top: 10px; 
     }
     
     #blackRect {
@@ -103,13 +110,15 @@
       height: 5px;
       background-color: #FFFDF7;
       position: absolute;
-    right: 14em;
+      right: 14em;
       top: 90px;
     }
 
     .whitetext {
       margin-top: 240px;
-      margin-left: 65px;
+      margin-left: 1.5em;
+      position: relative; 
+      z-index: 101; 
     }
     
     .blacktext {
@@ -119,11 +128,11 @@
 
     .right-side img {
       position: absolute;
-      z-index: 1;
+      z-index: 100; /* Below the text */
       top: 175px;
       right: 12.25em;
       width: 400px; 
-      opacity: 80%
+      opacity: 80%;
     }
     
     nav ul {
@@ -168,7 +177,7 @@
     <div class="blacktext">
       <h1> PORT </h1>
       <h1> FOLIO </h1>
-      <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
+      <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB<br> DESIGN, AND MARKETING.</p>
     </div>
     <div id="blackline"></div>
   </div>
